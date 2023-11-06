@@ -1,15 +1,13 @@
 var randomvariable = Math.floor(Math.random() * 6) + 1;
 var randomDiceImage = "dice" + randomvariable + ".png";
-var randomDiceImageSource = "images/" + randomDiceImage;
 
 var image1 = document.querySelectorAll("img")[0];
-image1.setAttribute("src", randomDiceImageSource);
+image1.setAttribute("src", randomDiceImage);
 var randomvariable2 = Math.floor(Math.random() * 6) + 1;
 var randomDiceImage2 = "dice" + randomvariable2 + ".png";
-var randomDiceImageSource2 = "images/" + randomDiceImage2;
 var image2 = document
   .querySelectorAll("img")[1]
-  .setAttribute("src", randomDiceImageSource2);
+  .setAttribute("src", randomDiceImage2);
 if (randomvariable > randomvariable2) {
   document.querySelector("h1").innerHTML = "!palyer 1 wins";
 } else if (randomvariable < randomvariable2) {
